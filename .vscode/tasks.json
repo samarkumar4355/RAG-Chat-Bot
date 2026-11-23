@@ -1,0 +1,50 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Run Streamlit app",
+			"type": "shell",
+			"command": "streamlit",
+			"args": [
+				"run",
+				"app.py",
+				"--server.headless",
+				"true",
+				"--server.port",
+				"8501"
+			],
+			"isBackground": true,
+			"problemMatcher": []
+		},
+		{
+			"label": "Run Streamlit app for verification",
+			"type": "shell",
+			"command": "streamlit",
+			"args": [
+				"run",
+				"app.py",
+				"--server.headless",
+				"true",
+				"--server.port",
+				"8502"
+			],
+			"isBackground": true,
+			"problemMatcher": []
+		},
+		{
+			"label": "Verify secrets configuration",
+			"type": "shell",
+			"command": "streamlit",
+			"args": [
+				"run",
+				"app.py",
+				"--server.headless",
+				"true",
+				"--server.port",
+				"8503"
+			],
+			"isBackground": true,
+			"problemMatcher": []
+		}
+	]
+}
